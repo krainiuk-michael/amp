@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "13d0633c1d2b462d6d84a3be130b1950",
+    "content-hash": "8760e704d06f24684a9e027d9ac93dbb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1513,31 +1513,38 @@
         },
         {
             "name": "drupal/amp",
-            "version": "dev-1.x",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/amp",
-                "reference": "88e9046a259d96c7a2c10f24e99f10a50f8c1ad4"
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/amp-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "83d877cbdfa796413e49cad8f8f6a5989309e1b5"
             },
             "require": {
                 "drupal/core": "*",
-                "drupal/token": "*",
+                "drupal/token": "^1.0",
                 "lullabot/amp": "^1.0.0"
             },
             "require-dev": {
-                "drupal/adsense": "*"
+                "drupal/adsense": "*",
+                "drupal/amptheme": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1-beta1+0-dev",
-                    "datestamp": "1519663384",
+                    "version": "8.x-2.0",
+                    "datestamp": "1523125195",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -1546,6 +1553,10 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
+                },
                 {
                     "name": "marcelovani",
                     "homepage": "https://www.drupal.org/user/854220"
@@ -1579,22 +1590,21 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/amp",
                 "issues": "http://drupal.org/project/issues/amp"
-            },
-            "time": "2018-02-26T16:41:23+00:00"
+            }
         },
         {
             "name": "drupal/amptheme",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/amptheme",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/amptheme-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "d515a1b7be432101593634ba8accf3752813e2fb"
+                "url": "https://ftp.drupal.org/files/projects/amptheme-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "c969746f56cbff42fc93678271179307e2a8e995"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1605,16 +1615,12 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1467417239",
+                    "version": "8.x-1.1",
+                    "datestamp": "1523124480",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "2753089: Check if simplexml_load_file returns FALSE in preprocess_block": "https://www.drupal.org/files/issues/amptheme-do_not_use_the_network_for_loading_logo_information-2753089-7.patch",
-                    "2770393: amptheme_preprocess_html() removes all script tags, even ld+json": "https://www.drupal.org/files/issues/amptheme-ldjson-2770393-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1622,6 +1628,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
+                },
                 {
                     "name": "mdrummond",
                     "homepage": "https://www.drupal.org/user/360968"
@@ -3015,16 +3025,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.3.2",
+            "version": "6.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90"
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/68d0ea14d5a3f42a20e87632a5f84931e2709c90",
-                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
                 "shasum": ""
             },
             "require": {
@@ -3034,7 +3044,7 @@
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
                 "psr/log": "^1.0"
             },
             "suggest": {
@@ -3076,7 +3086,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-03-26T16:33:04+00:00"
+            "time": "2018-04-22T15:46:56+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -3399,9 +3409,6 @@
                 "symfony/console": "^2.7.0"
             },
             "type": "library",
-            "extra": {
-                "patches_applied": []
-            },
             "autoload": {
                 "classmap": [
                     "src/Spec/validator-generated.php"
@@ -8137,7 +8144,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/amp": 20,
         "drupal/schema_metatag": 20,
         "karens/basis_drupal": 20
     },
