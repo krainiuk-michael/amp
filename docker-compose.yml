@@ -80,8 +80,11 @@ services:
 
   traefik:
     image: traefik
-    command: -c /dev/null --web --docker --logLevel=INFO
-    ports:
-      - '8006:80'
+#    command: -c /dev/null --web --docker --logLevel=INFO
+    command: -c /dev/null --web --docker --logLevel=INFO --defaultEntryPoints='https' --entryPoints="Name:https Address::443 TLS:/home/www-data/certs/cert.pem,/home/www-data/certs/key.pem" --entryPoints="Name:http Address::80 Redirect.EntryPoint:https"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - ~/ssl/certs:/home/www-data/certs/
+    ports:
+      - '8006:80'
+      - '4443:443'
