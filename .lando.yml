@@ -1,0 +1,37 @@
+name: amp8
+recipe: drupal8
+config:
+  webroot: web
+  php: '7.2'
+  drush: composer
+  xdebug: true
+
+services:
+  appserver:
+    config:
+      conf: config/php.ini
+    via: apache
+    overrides:
+      services:
+        environment:
+          SIMPLETEST_DB: 'sqlite://localhost//tmp/db.sqlite'
+          SIMPLETEST_BASE_URL: 'http://appserver/'
+          BROWSERTEST_OUTPUT_DIRECTORY: '/app/files/simpletest'
+          PHP_IDE_CONFIG: "serverName=appserver"
+  database:
+    type: mariadb
+
+events:
+  post-db-import:
+    - appserver: cd $LANDO_WEBROOT && drush updb -y
+    - appserver: cd $LANDO_WEBROOT && drush cr -y
+  post-start:
+    - appserver: cd $LANDO_MOUNT && composer install
+    - appserver: cp /app/web/core/phpunit.xml.dist /app/web/core/phpunit.xml
+    - appserver: mkdir -p -m 777 /app/files/simpletest
+
+tooling:
+  phpunit:
+    service: appserver
+    description: "Run PHP Unit tests: lando phpunit --group schema_metatag"
+    cmd: "/app/vendor/bin/phpunit --configuration /app/web/core --printer=\\Drupal\\Tests\\Listeners\\HtmlOutputPrinter"
