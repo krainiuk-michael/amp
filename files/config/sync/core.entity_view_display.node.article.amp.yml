@@ -1,0 +1,63 @@
+uuid: 41d5ebc5-4f5c-4f3c-80a6-c4be4efab6eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.amp
+    - field.field.node.article.body
+    - field.field.node.article.field_image
+    - field.field.node.article.field_reviews
+    - field.field.node.article.field_tags
+    - image.style.extra_large
+    - node.type.article
+  module:
+    - amp
+    - user
+_core:
+  default_config_hash: qVtHNxqdXB9w369AO5JB5SVhflquWqFm5xfyvYLAIlM
+id: node.article.amp
+targetEntityType: node
+bundle: article
+mode: amp
+content:
+  body:
+    type: amp_text
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    label: hidden
+  field_image:
+    type: amp_image
+    weight: 0
+    region: content
+    settings:
+      image_style: extra_large
+      image_link: ''
+      layout: responsive
+      width: 12
+      height: 8
+    third_party_settings: {  }
+    label: hidden
+  field_reviews:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: a4ba25a9-744d-42db-b38a-229fe3af8ee9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - basis_amp
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: basis_amp_page_title
+theme: basis_amp
+region: header
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

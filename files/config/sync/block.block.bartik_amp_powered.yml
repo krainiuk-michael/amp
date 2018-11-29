@@ -1,0 +1,22 @@
+uuid: 9588aced-cc44-4f97-8d2c-96c5b22b8468
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik_amp
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: bartik_amp_powered
+theme: bartik_amp
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

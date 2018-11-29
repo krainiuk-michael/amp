@@ -1,0 +1,22 @@
+uuid: 16a500d9-19bb-4e5b-a24e-39e58f277fd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik_amp
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: bartik_amp_content
+theme: bartik_amp
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

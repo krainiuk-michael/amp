@@ -1,0 +1,22 @@
+uuid: eda950f7-1b43-4af3-a032-eedc0486358c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - basis_amp
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: basis_amp_messages
+theme: basis_amp
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

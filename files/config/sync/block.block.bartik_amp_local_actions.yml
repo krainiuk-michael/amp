@@ -1,0 +1,20 @@
+uuid: c1902001-c096-487c-9fa2-def146607835
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bartik_amp
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: bartik_amp_local_actions
+theme: bartik_amp
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: d5f764b5-1edf-4ef0-b65e-3b10cfd755d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - schema_audit
+  theme:
+    - bartik
+id: bartik_teststructureddataongoogle.
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: test_block
+settings:
+  id: test_block
+  label: 'Test on Google'
+  provider: schema_audit
+  label_display: visible
+visibility: {  }

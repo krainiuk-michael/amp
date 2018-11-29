@@ -1,0 +1,22 @@
+uuid: e630bd04-625a-4e77-98e2-724338923a5b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - basis_amp
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: basis_amp_local_tasks
+theme: basis_amp
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

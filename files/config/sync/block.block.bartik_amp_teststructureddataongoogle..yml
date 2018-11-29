@@ -1,0 +1,20 @@
+uuid: edb39517-18dc-4ae2-b8e8-2e76150c3d82
+langcode: en
+status: true
+dependencies:
+  module:
+    - schema_audit
+  theme:
+    - bartik_amp
+id: bartik_amp_teststructureddataongoogle.
+theme: bartik_amp
+region: sidebar_second
+weight: 0
+provider: null
+plugin: test_block
+settings:
+  id: test_block
+  label: 'Test on Google'
+  provider: schema_audit
+  label_display: visible
+visibility: {  }

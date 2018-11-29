@@ -1,0 +1,20 @@
+uuid: 067a07f9-b057-41bc-afd8-73289f784588
+langcode: en
+status: true
+dependencies:
+  theme:
+    - basis_amp
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: basis_amp_local_actions
+theme: basis_amp
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: dbdbc39f-5f64-41b5-b161-419c96075b33
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - bartik_amp
+_core:
+  default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
+id: bartik_amp_footer
+theme: bartik_amp
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

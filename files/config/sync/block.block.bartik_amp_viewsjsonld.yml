@@ -1,0 +1,31 @@
+uuid: 7e9f3104-f3ff-428d-b37f-863abe693732
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9fee52a7-6980-49c3-9f13-00076a69c442'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik_amp
+id: bartik_amp_viewsjsonld
+theme: bartik_amp
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:9fee52a7-6980-49c3-9f13-00076a69c442'
+settings:
+  id: 'block_content:9fee52a7-6980-49c3-9f13-00076a69c442'
+  label: 'JSON-LD Configuration'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/examples*'
+    negate: false
+    context_mapping: {  }

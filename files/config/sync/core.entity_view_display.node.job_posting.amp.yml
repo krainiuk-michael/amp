@@ -1,0 +1,100 @@
+uuid: 6af3a862-c38b-422c-9651-588118a9c9ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.amp
+    - field.field.node.job_posting.body
+    - field.field.node.job_posting.field_amount_unit
+    - field.field.node.job_posting.field_end_date
+    - field.field.node.job_posting.field_hiring_organization
+    - field.field.node.job_posting.field_job_status
+    - field.field.node.job_posting.field_maximum_amount
+    - field.field.node.job_posting.field_minimum_amount
+    - field.field.node.job_posting.field_start_date
+    - node.type.job_posting
+  module:
+    - amp
+    - datetime
+    - options
+    - user
+id: node.job_posting.amp
+targetEntityType: node
+bundle: job_posting
+mode: amp
+content:
+  body:
+    label: hidden
+    type: amp_text
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_amount_unit:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_end_date:
+    weight: 1
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: short
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_hiring_organization:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_job_status:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_maximum_amount:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ','
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_minimum_amount:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ','
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_start_date:
+    weight: 0
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: short
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

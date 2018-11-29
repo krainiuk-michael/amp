@@ -1,0 +1,22 @@
+uuid: d1d3819b-10da-4503-b670-900405c5b96d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - basis_amp
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: basis_amp_powered
+theme: basis_amp
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

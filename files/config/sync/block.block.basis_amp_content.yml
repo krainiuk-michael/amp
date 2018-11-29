@@ -1,0 +1,22 @@
+uuid: dc984add-d058-48c2-86b8-3afea837c7bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - basis_amp
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: basis_amp_content
+theme: basis_amp
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
