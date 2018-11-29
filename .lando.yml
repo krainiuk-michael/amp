@@ -33,5 +33,5 @@ events:
 tooling:
   phpunit:
     service: appserver
-    description: "Run PHP Unit tests: lando phpunit --group schema_metatag"
+    description: "Run PHP Unit tests: lando phpunit --group amp"
     cmd: "/app/vendor/bin/phpunit --configuration /app/web/core --printer=\\Drupal\\Tests\\Listeners\\HtmlOutputPrinter"
