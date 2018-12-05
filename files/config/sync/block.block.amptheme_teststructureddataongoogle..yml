@@ -1,0 +1,20 @@
+uuid: 9137c261-e429-4c9c-b19d-5bc58050bd3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - schema_audit
+  theme:
+    - amptheme
+id: amptheme_teststructureddataongoogle.
+theme: amptheme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: test_block
+settings:
+  id: test_block
+  label: 'Test on Google'
+  provider: schema_audit
+  label_display: visible
+visibility: {  }

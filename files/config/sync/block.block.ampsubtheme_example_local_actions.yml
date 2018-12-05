@@ -1,0 +1,20 @@
+uuid: d0dbd813-3868-4de6-8181-26b9b7452cec
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ampsubtheme_example
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: ampsubtheme_example_local_actions
+theme: ampsubtheme_example
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

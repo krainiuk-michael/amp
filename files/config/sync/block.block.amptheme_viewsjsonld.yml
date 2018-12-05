@@ -1,0 +1,31 @@
+uuid: bd0b9d5d-b037-4691-acea-fdbc26c8140c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9fee52a7-6980-49c3-9f13-00076a69c442'
+  module:
+    - block_content
+    - system
+  theme:
+    - amptheme
+id: amptheme_viewsjsonld
+theme: amptheme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:9fee52a7-6980-49c3-9f13-00076a69c442'
+settings:
+  id: 'block_content:9fee52a7-6980-49c3-9f13-00076a69c442'
+  label: 'JSON-LD Configuration'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/examples*'
+    negate: false
+    context_mapping: {  }

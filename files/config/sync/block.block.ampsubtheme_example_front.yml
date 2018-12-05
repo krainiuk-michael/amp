@@ -1,0 +1,31 @@
+uuid: f58301fa-4069-44e9-8ebd-c5085d678d78
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7d92b019-05ed-4185-85ac-26cefdbe00e8'
+  module:
+    - block_content
+    - system
+  theme:
+    - ampsubtheme_example
+id: ampsubtheme_example_front
+theme: ampsubtheme_example
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:7d92b019-05ed-4185-85ac-26cefdbe00e8'
+settings:
+  id: 'block_content:7d92b019-05ed-4185-85ac-26cefdbe00e8'
+  label: Front
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

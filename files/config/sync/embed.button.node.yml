@@ -1,0 +1,22 @@
+uuid: b6540bcd-54ab-46b2-a304-5e544bc62db0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:a777ed7c-5d56-48ea-8cfd-d35315fdcfd8'
+  module:
+    - entity_embed
+    - node
+_core:
+  default_config_hash: xgvZUh-eaMilacE1XYCQ9nLH-2-meOjCyofXSO82gqg
+label: Node
+id: node
+type_id: entity
+type_settings:
+  entity_type: node
+  bundles: {  }
+  display_plugins: {  }
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon_uuid: a777ed7c-5d56-48ea-8cfd-d35315fdcfd8
