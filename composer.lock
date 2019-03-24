@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01dcb3b2f555586ec99199774978ee1a",
+    "content-hash": "87421f515230eded12bdf322eb4be8b9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4050,6 +4050,31 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "karens/basis_amp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/karens/basis-amp.git",
+                "reference": "06841a3c31f87db118072c8fb6ce574ee5e74690"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/karens/basis-amp/zipball/06841a3c31f87db118072c8fb6ce574ee5e74690",
+                "reference": "06841a3c31f87db118072c8fb6ce574ee5e74690",
+                "shasum": ""
+            },
+            "require": {
+                "karens/basis_drupal": "8.0.x-dev"
+            },
+            "type": "drupal-custom-theme",
+            "description": "AMP version of Basis Drupal theme.",
+            "homepage": "https://github.com/karens/basis-amp",
+            "keywords": [
+                "Drupal"
+            ],
+            "time": "2019-03-24T21:31:56+00:00"
         },
         {
             "name": "karens/basis_drupal",
@@ -9131,6 +9156,7 @@
         "drupal/amptheme": 20,
         "drupal/entity_embed": 10,
         "drupal/inline_entity_form": 5,
+        "karens/basis_amp": 20,
         "karens/basis_drupal": 20
     },
     "prefer-stable": true,
