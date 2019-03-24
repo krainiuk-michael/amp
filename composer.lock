@@ -1874,7 +1874,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/amp",
-                "reference": "8894a16aadd9131ec4bd880feba0b89c98073d7b"
+                "reference": "f67a42c149d68981460fbd92d369374708120453"
             },
             "require": {
                 "drupal/core": "*",
@@ -1892,7 +1892,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1540727884",
+                    "datestamp": "1543892880",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1946,7 +1946,7 @@
                 "source": "http://cgit.drupalcode.org/amp",
                 "issues": "http://drupal.org/project/issues/amp"
             },
-            "time": "2018-11-29T12:21:33+00:00"
+            "time": "2018-12-04T15:23:27+00:00"
         },
         {
             "name": "drupal/amptheme",
