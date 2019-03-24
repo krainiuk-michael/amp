@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "396e2b8ff04e26a950d63c1b6d2e9a13",
+    "content-hash": "01dcb3b2f555586ec99199774978ee1a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4139,16 +4139,16 @@
         },
         {
             "name": "lullabot/amp",
-            "version": "dev-restrict-masterminds",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Lullabot/amp-library.git",
-                "reference": "071ce5f86aeffe5d1febd8f4a35821cb093eb90a"
+                "reference": "54a79b5545141e1bb28d11a8479d7f4e9a5dca9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Lullabot/amp-library/zipball/071ce5f86aeffe5d1febd8f4a35821cb093eb90a",
-                "reference": "071ce5f86aeffe5d1febd8f4a35821cb093eb90a",
+                "url": "https://api.github.com/repos/Lullabot/amp-library/zipball/54a79b5545141e1bb28d11a8479d7f4e9a5dca9d",
+                "reference": "54a79b5545141e1bb28d11a8479d7f4e9a5dca9d",
                 "shasum": ""
             },
             "require": {
@@ -4191,7 +4191,7 @@
                 "drupal",
                 "mobile"
             ],
-            "time": "2018-11-29T12:11:00+00:00"
+            "time": "2018-11-29T12:40:29+00:00"
         },
         {
             "name": "marc1706/fast-image-size",
