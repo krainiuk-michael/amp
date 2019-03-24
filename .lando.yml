@@ -25,6 +25,8 @@ events:
   post-db-import:
     - bash /app/scripts/lando/post-db.sh
 tooling:
+  drush:
+    cmd: /app/vendor/bin/drush --root=/app/web
   phpunit:
     service: appserver
     description: "Run PHP Unit tests: lando phpunit --group schema_metatag"
