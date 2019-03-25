@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87421f515230eded12bdf322eb4be8b9",
+    "content-hash": "891dad82291cabdf2e68594f574ff3ce",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4053,7 +4053,7 @@
         },
         {
             "name": "karens/basis_amp",
-            "version": "dev-master",
+            "version": "8.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/karens/basis-amp.git",
