@@ -4057,12 +4057,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/karens/basis-amp.git",
-                "reference": "06841a3c31f87db118072c8fb6ce574ee5e74690"
+                "reference": "902759717e925d2336837e07b72bba0ff2ff6882"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/karens/basis-amp/zipball/06841a3c31f87db118072c8fb6ce574ee5e74690",
-                "reference": "06841a3c31f87db118072c8fb6ce574ee5e74690",
+                "url": "https://api.github.com/repos/karens/basis-amp/zipball/902759717e925d2336837e07b72bba0ff2ff6882",
+                "reference": "902759717e925d2336837e07b72bba0ff2ff6882",
                 "shasum": ""
             },
             "require": {
@@ -4074,7 +4074,7 @@
             "keywords": [
                 "Drupal"
             ],
-            "time": "2019-03-24T21:31:56+00:00"
+            "time": "2019-03-25T11:26:25+00:00"
         },
         {
             "name": "karens/basis_drupal",
