@@ -13,7 +13,7 @@ _core:
 id: ampsubtheme_example_main_menu
 theme: ampsubtheme_example
 region: header
-weight: -6
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:
