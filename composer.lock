@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "891dad82291cabdf2e68594f574ff3ce",
+    "content-hash": "23657e3477ca8062d7fec2d1cc705287",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1874,11 +1874,12 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/amp",
-                "reference": "f67a42c149d68981460fbd92d369374708120453"
+                "reference": "a45152d40865f205bf98c5d0d0ecdf18152bf8e4"
             },
             "require": {
                 "drupal/core": "*",
-                "drupal/token": "^1.0",
+                "drupal/token": "*",
+                "drupaljedi/css-tree-shaking": "dev-master",
                 "lullabot/amp": "^1.0.0"
             },
             "require-dev": {
@@ -1892,7 +1893,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1543892880",
+                    "datestamp": "1553550780",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1946,7 +1947,69 @@
                 "source": "http://cgit.drupalcode.org/amp",
                 "issues": "http://drupal.org/project/issues/amp"
             },
-            "time": "2018-12-04T15:23:27+00:00"
+            "time": "2019-03-25T23:09:19+00:00"
+        },
+        {
+            "name": "drupal/amp_cts",
+            "version": "3.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/amp_cts",
+                "reference": "8.x-3.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/amp_cts-8.x-3.0-alpha1.zip",
+                "reference": "8.x-3.0-alpha1",
+                "shasum": "4e1f9a96f2d1f88263316ec5391d2af94528ea0c"
+            },
+            "require": {
+                "drupal/amp": "^3.0",
+                "drupal/core": "*",
+                "drupaljedi/css-tree-shaking": "dev-master"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0-alpha1",
+                    "datestamp": "1553659086",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "kala4ek",
+                    "homepage": "https://www.drupal.org/user/1945174"
+                },
+                {
+                    "name": "mrsad",
+                    "homepage": "https://www.drupal.org/user/2661341"
+                },
+                {
+                    "name": "ozhegov.alexander",
+                    "homepage": "https://www.drupal.org/user/3564946"
+                }
+            ],
+            "description": "CSS Tree Shaking for Google AMP",
+            "homepage": "http://drupal.org/project/amp_cts",
+            "keywords": [
+                "AMP",
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/amp_cts",
+                "issues": "http://drupal.org/project/issues/amp_cts"
+            }
         },
         {
             "name": "drupal/amptheme",
@@ -3439,6 +3502,44 @@
             }
         },
         {
+            "name": "drupaljedi/css-tree-shaking",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Drupal-Jedi/css-tree-shaking.git",
+                "reference": "a71a6d8fb9765153f28d11efd5ccf35764b7ddac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Drupal-Jedi/css-tree-shaking/zipball/a71a6d8fb9765153f28d11efd5ccf35764b7ddac",
+                "reference": "a71a6d8fb9765153f28d11efd5ccf35764b7ddac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "sabberworm/php-css-parser": "^8.2",
+                "sunra/php-simple-html-dom-parser": "^1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DrupalJedi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitry Kiselev",
+                    "email": "kiselev.d@i20.biz"
+                }
+            ],
+            "description": "Helps you to eliminate the portions of CSS you aren't using. Usually should be used to generate AMP pages, where is the fixed limit for maximum styles size.",
+            "time": "2018-11-16T12:20:37+00:00"
+        },
+        {
             "name": "drush/drush",
             "version": "9.4.0",
             "source": {
@@ -4929,6 +5030,54 @@
             ],
             "description": "Automatic BASH completion for Symfony Console Component based applications.",
             "time": "2018-02-10T04:28:01+00:00"
+        },
+        {
+            "name": "sunra/php-simple-html-dom-parser",
+            "version": "v1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
+                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/75b9b1cb64502d8f8c04dc11b5906b969af247c6",
+                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "https://github.com/sunra"
+                },
+                {
+                    "name": "S.C. Chen",
+                    "homepage": "http://sourceforge.net/projects/simplehtmldom/"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2016-11-22T22:57:47+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -9153,6 +9302,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/amp": 20,
+        "drupal/amp_cts": 15,
         "drupal/amptheme": 20,
         "drupal/entity_embed": 10,
         "drupal/inline_entity_form": 5,
