@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.organization.field_image
     - field.field.node.organization.field_logo
     - field.field.node.organization.field_menu
-    - field.field.node.organization.field_reference
+    - field.field.node.organization.field_office_hours
     - field.field.node.organization.field_reviews
     - field.field.node.organization.field_social_links
     - field.field.node.organization.field_web_site
@@ -50,7 +50,7 @@ hidden:
   field_address: true
   field_logo: true
   field_menu: true
-  field_reference: true
+  field_office_hours: true
   field_reviews: true
   field_social_links: true
   field_web_site: true

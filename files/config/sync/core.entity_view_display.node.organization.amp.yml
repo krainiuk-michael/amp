@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.organization.field_image
     - field.field.node.organization.field_logo
     - field.field.node.organization.field_menu
-    - field.field.node.organization.field_reference
+    - field.field.node.organization.field_office_hours
     - field.field.node.organization.field_reviews
     - field.field.node.organization.field_social_links
     - field.field.node.organization.field_web_site
@@ -63,15 +63,6 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_reference:
-    weight: 7
-    label: above
-    settings:
-      link: true
-      view_mode: default
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: content
   field_reviews:
     weight: 8
     label: above
@@ -111,3 +102,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_logo: true
+  field_office_hours: true
