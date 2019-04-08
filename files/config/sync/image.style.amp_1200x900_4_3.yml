@@ -1,0 +1,18 @@
+uuid: b659a37c-a0ed-4aa3-a27d-8d0bafa3053b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - amp
+name: amp_1200x900_4_3
+label: 'AMP 1200x900 - 4:3'
+effects:
+  3baaa018-f5b4-4094-8d0d-1dcd823dd055:
+    uuid: 3baaa018-f5b4-4094-8d0d-1dcd823dd055
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: 900
+      upscale: true

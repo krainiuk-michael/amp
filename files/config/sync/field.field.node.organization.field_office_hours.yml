@@ -1,0 +1,21 @@
+uuid: 144156e7-5140-44c9-9344-5fe4e72d9a4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_office_hours
+    - node.type.organization
+  module:
+    - office_hours
+id: node.organization.field_office_hours
+field_name: field_office_hours
+entity_type: node
+bundle: organization
+label: 'Office Hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

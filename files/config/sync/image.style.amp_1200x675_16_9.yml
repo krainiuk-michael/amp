@@ -1,0 +1,18 @@
+uuid: d68f58c4-4169-4b79-aafe-a8fde42c6d23
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - amp
+name: amp_1200x675_16_9
+label: 'AMP 1200x675 - 16:9'
+effects:
+  3d9ad838-eb79-4e14-b081-bc8e27905c39:
+    uuid: 3d9ad838-eb79-4e14-b081-bc8e27905c39
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: 675
+      upscale: true

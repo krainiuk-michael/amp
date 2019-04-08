@@ -1,0 +1,18 @@
+uuid: 877e28a0-ec45-48ae-9dee-f91485c9c67d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - amp
+name: amp_1200x1200_1_1
+label: 'AMP 1200x1200 - 1:1'
+effects:
+  c1ee4587-4d62-4ea9-8b01-22266798d886:
+    uuid: c1ee4587-4d62-4ea9-8b01-22266798d886
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: 1200
+      upscale: true
