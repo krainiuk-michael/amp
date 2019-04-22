@@ -4220,12 +4220,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/karens/basis-amp.git",
-                "reference": "bd156aa078719d40b753ab553d762cb191eb6489"
+                "reference": "2231f8167a57ba44c59823557ed4625bf01737fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/karens/basis-amp/zipball/bd156aa078719d40b753ab553d762cb191eb6489",
-                "reference": "bd156aa078719d40b753ab553d762cb191eb6489",
+                "url": "https://api.github.com/repos/karens/basis-amp/zipball/2231f8167a57ba44c59823557ed4625bf01737fc",
+                "reference": "2231f8167a57ba44c59823557ed4625bf01737fc",
                 "shasum": ""
             },
             "require": {
@@ -4237,7 +4237,7 @@
             "keywords": [
                 "Drupal"
             ],
-            "time": "2019-04-06T04:39:06+00:00"
+            "time": "2019-04-08T20:38:48+00:00"
         },
         {
             "name": "karens/basis_drupal",
@@ -7803,12 +7803,12 @@
             "version": "v1.6.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mikey179/vfsStream.git",
+                "url": "https://github.com/bovigo/vfsStream.git",
                 "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
+                "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
                 "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
                 "shasum": ""
             },

@@ -30,7 +30,7 @@ tooling:
   phpunit:
     service: appserver
     description: "Run PHP Unit tests: lando phpunit --group schema_metatag"
-    cmd: "/app/vendor/bin/phpunit --configuration /app/web/core --printer=\\Drupal\\Tests\\Listeners\\HtmlOutputPrinter"
+    cmd: '/app/vendor/bin/phpunit --configuration /app/web/core/ --printer=\\Drupal\\Tests\\Listeners\\HtmlOutputPrinter'
   phpunit-prepare:
     service: appserver
     description: "One time update so tests will run in php 7.2"
