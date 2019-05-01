@@ -1,20 +1,14 @@
 name: amp8
 recipe: drupal8
 config:
-  webroot: web
   php: '7.2'
-  drush: composer
-  index: false
-  edge: false
-  cache: false
   xdebug: true
 env_file:
   - .env
 services:
   appserver:
-    config:
-      conf: config/php.ini
-    via: apache
+    webroot: web
+    type: php
     run:
       - bash /app/scripts/lando/run.sh
   database:
@@ -23,14 +17,16 @@ events:
   post-start:
     - bash /app/scripts/lando/post-start.sh
   post-db-import:
-    - bash /app/scripts/lando/post-db.sh
+    - appserver: /app/vendor/bin/drush updb --root=/app/web -y
+    - appserver: /app/vendor/bin/drush cim --root=/app/web -y
+    - appserver: /app/vendor/bin/drush cr --root=/app/web
+    - appserver: /app/vendor/bin/drush upwd admin password --root=/app/web
+    - appserver: echo "Log in with credentials admin/password"
 tooling:
-  drush:
-    cmd: /app/vendor/bin/drush --root=/app/web
   phpunit:
     service: appserver
     description: "Run PHP Unit tests: lando phpunit --group schema_metatag"
-    cmd: '/app/vendor/bin/phpunit --configuration /app/web/core/ --printer=\\Drupal\\Tests\\Listeners\\HtmlOutputPrinter'
+    cmd: "/app/vendor/bin/phpunit --configuration /app/web/core --printer=\\Drupal\\Tests\\Listeners\\HtmlOutputPrinter"
   phpunit-prepare:
     service: appserver
     description: "One time update so tests will run in php 7.2"
