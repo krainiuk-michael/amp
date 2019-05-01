@@ -1,0 +1,29 @@
+parameters:
+  convention.phpcs_standards: Drupal,DrupalPractice
+  ascii:
+        failed: vendor/vijaycs85/drupal-quality-checker/resources/ascii/grumpy.txt
+        succeeded: vendor/vijaycs85/drupal-quality-checker/resources/ascii/happy.txt
+  git_dir: .
+  bin_dir: vendor/bin
+  tasks:
+    phplint: ~
+    yamllint:
+      ignore_patterns:
+        - /dist\/.*\.yml/
+    composer: ~
+    jsonlint: ~
+    securitychecker: ~
+    phpcs:
+      standard: "%convention.phpcs_standards%"
+      whitelist_patterns:
+        - /web\/modules/
+        - /web\/themes/
+        - /web\/profiles/
+        - /drush/
+      triggered_by:
+        - php
+        - module
+        - theme
+        - install
+        - inc
+        - profile

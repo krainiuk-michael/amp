@@ -52,10 +52,12 @@
         "karens/basis_drupal": "8.0.x-dev",
         "lullabot/amp": "^1.1",
         "masterminds/html5": "~2.3.0",
+        "sensiolabs/security-checker": "^5.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
+        "vijaycs85/drupal-quality-checker": "^1.0",
         "webflo/drupal-core-require-dev": "~8.4"
     },
     "conflict": {
